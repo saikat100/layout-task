@@ -14,26 +14,39 @@ body {
 	left: 64px;
 	top: 81px;
 	background: var(--light-grey);
-    color: var(--dark-grey);
-    font-weight: 300;
-font-size: 22px;
+	color: var(--dark-grey);
+	font-weight: 300;
+	font-size: 22px;
 	border-radius: 14px;
 	border: none;
 	cursor: pointer;
 	margin: 10px;
 }
-.active, .btn:hover {
-  background-color: var(--dark-grey);
-  color: var(--light-text);
+.active,
+.btn:hover {
+	background-color: var(--dark-grey);
+	color: var(--light-text);
 }
 .card {
+	position: relative;
 	background: var(--red-bg);
 	border-radius: 14px;
+	height: 150px;
+}
+.card-contant {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	margin: auto;
 }
 #container {
+	position: relative;
 	display: grid;
 	grid-template-rows: auto;
 	grid-gap: 10px;
+	bottom: 0;
 }
 #container > div {
 	margin: 10px;
